@@ -100,7 +100,7 @@
                 &kp ESC   &kp SQT    &kp UP_ARROW  &kp EQUAL  &kp LBRC            &kp RBRC       &kp KP_N7  &kp KP_N8        &kp KP_N9  &kp KP_PLUS
                 &kp PIPE  &kp LEFT   &kp DOWN      &kp RIGHT  &kp LBKT            &kp RBKT       &kp KP_N4  &kp KP_N5        &kp KP_N6  &kp KP_MINUS
 &kp LEFT_SHIFT  &kp DEL   &kp PG_UP  &kp LEFT_WIN  &kp PG_DN  &kp GREATER_THAN    &kp LESS_THAN  &kp KP_N1  &kp KP_N2        &kp KP_N3  &kp KP_MULTIPLY  &kp KP_DIVIDE
-                                     &kp QUESTION  &kp MINUS  &kp EXCL            &mo ADJ        &none      &kp KP_NUMBER_0
+                                     &kp QUESTION  &kp MINUS  &kp EXCL            &mo 3          &none      &kp KP_NUMBER_0
             >;
         };
 
@@ -125,8 +125,8 @@
             bindings = <
         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4  &kp N5               &kp NUMBER_6  &kp N7          &kp N8      &kp N9      &kp N0
         &kp MINUS     &kp ESCAPE    &kp UP_ARROW    &kp PIPE      &kp RIGHT_BRACKET    &kp C_MUTE    &kp LS(RA(N4))  &kp RA(N5)  &kp RA(N4)  &kp RA(O)
-&trans  &kp RA(F18)   &kp LEFT      &kp DOWN_ARROW  &kp RIGHT     &trans               &kp C_VOL_DN  &kp C_VOL_UP    &kp C_PREV  &kp C_NEXT  &kp BSLH   &trans
-                                    &trans          &gif          &mo ADJ              &trans        &kp C_PP        &trans
+&trans  &kp RA(F18)   &kp LEFT      &kp DOWN_ARROW  &kp RIGHT     &kp RA(NUMBER_2)     &kp C_VOL_DN  &kp C_VOL_UP    &kp C_PREV  &kp C_NEXT  &kp BSLH   &trans
+                                    &trans          &gif          &mo 3                &trans        &kp C_PP        &trans
             >;
         };
 
@@ -151,7 +151,7 @@
             bindings = <
         &sys_reset   &bt BT_CLR  &out OUT_TOG  &trans  &trans    &kp INSERT     &kp F7  &kp F8  &kp F9  &kp F12
         &bootloader  &bt BT_NXT  &trans        &trans  &trans    &kp PG_UP      &kp F4  &kp F5  &kp F6  &kp F11
-&trans  &trans       &bt BT_PRV  &trans        &trans  &trans    &kp PAGE_DOWN  &kp F1  &kp F2  &kp F3  &kp F10  &trans
+&trans  &trans       &bt BT_PRV  &trans        &trans  &trans    &kp PAGE_DOWN  &kp F1  &kp F2  &kp F3  &kp F10  &to 6
                                  &trans        &trans  &trans    &tog 0         &trans  &trans
             >;
         };
@@ -175,10 +175,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp TAB     &kp I      &kp LC(LALT)  &kp O        &kp LC(F20)    &none  &none  &none  &none  &none
-       &lt TVP2 L  &kp LEFT   &kp LALT      &kp RIGHT    &kp SPACE      &none  &none  &none  &none  &none
-&kp J  &kp LSHFT   &kp LC(C)  &kp BSPC      &kp LC(V)    &kp LC(F19)    &none  &none  &none  &none  &none  &none
-                              &trans        &kp LC(F14)  &kp LC(F13)    &none  &none  &none
+       &kp TAB    &kp I      &kp LC(LALT)  &kp O        &kp LC(F20)    &none  &none  &none  &none  &none
+       &lt 0 L    &kp LEFT   &kp LALT      &kp RIGHT    &kp SPACE      &none  &none  &none  &none  &none
+&kp J  &kp LSHFT  &kp LC(C)  &kp BSPC      &kp LC(V)    &kp LC(F19)    &none  &none  &none  &none  &none  &none
+                             &trans        &kp LC(F14)  &kp LC(F13)    &none  &none  &none
             >;
         };
 
@@ -209,6 +209,15 @@
         };
 
         layer_6 {
+            bindings = <
+                &kp M    &kp Q  &kp W    &kp E             &kp R        &trans  &trans  &trans  &trans  &trans
+                &kp J    &kp A  &kp S    &kp D             &kp F        &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp TAB  &kp Z  &kp X    &kp V             &trans       &trans  &trans  &trans  &trans  &trans  &to 0
+                                &kp TAB  &kp LEFT_CONTROL  &kp SPACE    &trans  &trans  &trans
+            >;
+        };
+
+        layer_7 {
             bindings = <
         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
