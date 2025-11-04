@@ -210,10 +210,10 @@
 
         layer_6 {
             bindings = <
-                &kp M    &kp Q  &kp W    &kp E             &kp R        &trans  &trans  &trans  &trans  &trans
-                &kp J    &kp A  &kp S    &kp D             &kp F        &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp TAB  &kp Z  &kp X    &kp V             &trans       &trans  &trans  &trans  &trans  &trans  &to 0
-                                &kp TAB  &kp LEFT_CONTROL  &kp SPACE    &trans  &trans  &trans
+                &kp M       &kp Q  &kp W    &kp E             &kp R           &trans  &trans  &trans  &trans  &trans
+                &kp J       &kp A  &kp S    &kp D             &kp F           &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp ESCAPE  &kp Z  &kp X    &kp V             &kp LEFT_ALT    &trans  &trans  &trans  &trans  &trans  &to 0
+                                   &kp TAB  &kp LEFT_CONTROL  &kp SPACE       &trans  &trans  &trans
             >;
         };
 
